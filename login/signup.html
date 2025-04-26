@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    }
+
+    .container {
+      display: flex;
+      width: 900px;
+      height: 500px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .left-section {
+      flex: 1;
+      background: linear-gradient(to top right, #7b2ff7, #f107a3);
+      color: white;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .left-section p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .login-form h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .sign-in-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      color: white;
+      background: linear-gradient(to right, #7b2ff7, #f107a3);
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .sign-in-btn:hover {
+      opacity: 0.9;
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .signup-link a {
+      color: #7b2ff7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1>Welcome!</h1>
+      <p>Create your account and start your journey with us.</p>
+    </div>
+
+    <div class="right-section">
+      <form class="login-form" action="signup.php" method="POST">
+        <h2>Create Account</h2>
+
+        <div class="input-group">
+          <input type="text" id="name" name="name" placeholder="Full Name" required />
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" name="email" placeholder="Email" required />
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" name="password" placeholder="Password" required />
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required />
+        </div>
+
+        <button type="submit" class="sign-in-btn">Sign Up</button>
+
+        <p class="signup-link">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
